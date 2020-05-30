@@ -1,128 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" 
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-<style>
-body{
-text-align: center;
+    <style>
+      body {
+        text-align: center;
+      }
 
-}
+      .container {
+        box-sizing: border-box;
+        margin: auto;
+      }
 
-.container{
+      .imgContainer {
+        margin: auto;
+        box-sizing: border-box;
+        width: 600px;
+        height: 400px;
+      }
 
-box-sizing: border-box;
-margin: auto;
+      .video {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
 
+      .search_bar {
+        position: relative;
+      }
 
-}
+      #search__icon {
+        position: absolute;
+        margin-top: 8px;
+        margin-left: 10px;
+      }
+      #searchBar {
+        height: 30px;
+        border-radius: 25px;
+        border: 1px groove #eee;
+        padding: 5px;
+      }
 
-.imgContainer{
-margin: auto;
-box-sizing: border-box;
-width:600px;
-height: 400px;
+      .button {
+        margin-top: 2rem;
+      }
+      .btn {
+        color: #dae1e7;
+      }
 
-
-
-}
-
-.video{
-
-position:absolute;
-top:30%;
-left:50%;
-transform: translate(-50%,50%);
-
-}
-
-
-.search_bar{
-    position:relative;
-}
-
-#search__icon{
-position:absolute;
-margin-top:8px;
-margin-left:10px;
-
-}
-#searchBar{
-
-    height:30px;
-    border-radius: 25px;
-    border: 1px groove #eee;
-    padding: 5px; 
-    
-}
-
-
-
-
-.button{
-    
-    margin-top: 2rem;
-    
-
-}
-.btn{
-    color: #DAE1E7;
-
-}
-
-.btn:not(:last-child){
-
-    margin-right: 2rem;
-}
-
+      .btn:not(:last-child) {
+        margin-right: 2rem;
+      }
     </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imgContainer">
+        <img
+          style="width: 600px; height: 400px;"
+          src="image/google.png"
+          alt="Google logo"
+        />
+      </div>
 
-</head>
-<body>
-    <div class = container>
-        <div class = "imgContainer">
-            <img style="width:600px;height:400px;" src="image/google.png" alt="Google logo">
-        </div> 
+      <div class="video">
+        <video width="160" height="120" controls autoplay loop>
+          <source src="video/Warming-up.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
+      <div class="search_bar">
+        <form action="https://google.com/search">
+          <img
+            id="search__icon"
+            width="15"
+            height="15"
+            src="image/searchicon.png"
+            alt="search icon"
+          />
+          <input
+            style="outline: none;"
+            id="searchBar"
+            name="q"
+            type="text"
+            width="30"
+            size="90"
+            placeholder="      Search"
+          />
 
-
-
-        <div class = "video">
-            <video width="160" height="120" controls autoplay loop>
-                <source src="video/Warming-up.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-
-        </div>
-
-        <div class = "search_bar">
-            <form action="https://google.com">
-                <img id = "search__icon" width="15" height="15" src="image/searchicon.png"
-                alt="search icon">
-                <input  style= " outline:none;"id = "searchBar" type="text" width="30" size = "90" placeholder="      Search">
-            
-                <div class = "button">
-                    <input type="submit" value="Google" class="btn btn-light" >
-                   <button type="button" class="btn btn-light">I am feeling Lucky</button>
-                   </div>
-
-            </form>
-            
-         
-        </div>
-
-        
-
-
-
-
+          <div class="button">
+            <input type="submit" value="Google" class="btn btn-light" />
+            <button type="button" class="btn btn-light">
+              I am feeling Lucky
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-
-    
-</body>
+  </body>
 </html>
